@@ -9,19 +9,19 @@ export default defineConfig({
     react(),
     dts({
       include: ["lib"],
-      outDir: "dist", // Ensure types are output to the dist folder
-      tsconfigPath: "./tsconfig-build.json", // Specify the tsconfig for type generation
+      outDir: "dist",
+      tsconfigPath: "./tsconfig-build.json",
     }),
   ],
   build: {
     lib: {
       entry: resolve(__dirname, "lib/main.ts"),
       formats: ["es"],
-      fileName: "greenmoons-web-auth", // Set file name without the .js extension
+      fileName: "greenmoons-web-auth",
     },
-    outDir: "dist", // Ensure everything goes to the dist folder
+    outDir: "dist",
     rollupOptions: {
-      external: ["react", "react-dom"], // Mark peer dependencies as external
+      external: ["react", "react-dom"],
     },
   },
 });

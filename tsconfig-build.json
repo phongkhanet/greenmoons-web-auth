@@ -1,4 +1,11 @@
 {
-    "extends" : "./tsconfig.json",
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+      "outDir": "dist",
+      "declaration": true,
+      "declarationMap": true, // Optional, for debugging types
+      "emitDeclarationOnly": true // This will only output .d.ts files without transpiling .ts files to .js
+    },
     "include": ["lib"]
-}
+  }
+  

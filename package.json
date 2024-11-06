@@ -1,9 +1,9 @@
 {
   "name": "greenmoons-web-auth",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
-  "main": "dist/greenmoons-web-auth.js",
-  "types": "dist/greenmoons-web-auth.d.ts",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
   "files": [
     "dist"
   ],
